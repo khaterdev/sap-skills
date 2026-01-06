@@ -14,7 +14,7 @@ Add the SAP Skills marketplace to Claude Code:
 
 ```bash
 # Add the marketplace
-/plugin marketplace add https://github.com/secondsky/sap-skills
+/plugin marketplace add https://github.com/khaterdev/sap-skills
 
 # Install individual skills
 /plugin install sap-cap-capire@sap-skills
@@ -27,7 +27,7 @@ Add the SAP Skills marketplace to Claude Code:
 ```json
 {
   "extraKnownMarketplaces": [
-    { "name": "sap-skills", "url": "https://github.com/secondsky/sap-skills" }
+    { "name": "sap-skills", "url": "https://github.com/khaterdev/sap-skills" }
   ]
 }
 ```
@@ -38,7 +38,7 @@ For contributors or local development:
 
 ```bash
 # Clone the repository
-git clone https://github.com/secondsky/sap-skills.git
+git clone https://github.com/khaterdev/sap-skills.git
 
 # Skills are automatically available from plugins in the plugins/ directory
 ```
@@ -234,7 +234,7 @@ See [CHANGELOG.md](CHANGELOG.md) for complete details.
 This repository is open source under the **GPL-3.0 License**. Contributions are welcome!
 
 **Ways to contribute**:
-- Report issues or suggest features via [GitHub Issues](https://github.com/secondsky/sap-skills/issues)
+- Report issues or suggest features via [GitHub Issues](https://github.com/khaterdev/sap-skills/issues)
 - Submit new skills (use plugin-dev + [Contributor Guide](docs/contributor-guide/))
 - Improve existing skills with updated docs or references
 - Help maintain package versions and dependencies
@@ -263,7 +263,7 @@ This repository is open source under the **GPL-3.0 License**. Contributions are 
 ## Support
 
 - **Documentation**: Browse guides in this repository
-- **Issues**: [GitHub Issues](https://github.com/secondsky/sap-skills/issues)
+- **Issues**: [GitHub Issues](https://github.com/khaterdev/sap-skills/issues)
 - **SAP Resources**:
   - [SAP Developer Center](https://developers.sap.com/)
   - [SAP Community](https://community.sap.com/)
@@ -278,5 +278,6 @@ This project is licensed under the **GNU General Public License v3.0** - see the
 ---
 
 **Maintained by**: SAP Skills Contributors
-**Repository**: [https://github.com/secondsky/sap-skills](https://github.com/secondsky/sap-skills)
+**Repository**: [https://github.com/khaterdev/sap-skills](https://github.com/khaterdev/sap-skills)
+**Original Repository**: [https://github.com/secondsky/sap-skills](https://github.com/secondsky/sap-skills)
 **Last Updated**: 2025-12-27 (v2.1.0)
