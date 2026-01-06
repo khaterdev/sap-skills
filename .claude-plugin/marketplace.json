@@ -1,6 +1,9 @@
 {
   "name": "sap-skills",
-  "owner": "khaterdev",
+  "owner": {
+    "name": "khaterdev",
+    "url": "https://github.com/khaterdev"
+  },
   "version": "2.1.0",
   "description": "Production-ready skills for SAP development with Claude Code CLI",
   "repository": "https://github.com/khaterdev/sap-skills",
