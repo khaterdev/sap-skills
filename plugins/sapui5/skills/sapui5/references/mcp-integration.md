@@ -99,7 +99,6 @@ The sapui5 plugin includes `.mcp.json` at the plugin root:
     "command": "npx",
     "args": ["-y", "@ui5/mcp-server"],
     "env": {
-      "UI5_PROJECT_DIR": "${cwd}",
       "UI5_VERSION": "1.120.0",
       "UI5_MCP_SERVER_RESPONSE_NO_RESOURCES": "true"
     }
@@ -111,7 +110,7 @@ The sapui5 plugin includes `.mcp.json` at the plugin root:
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `UI5_PROJECT_DIR` | `${cwd}` | Project root directory for context-aware operations |
+| `UI5_PROJECT_DIR` | Current directory | Project root directory for context-aware operations (optional, defaults to cwd) |
 | `UI5_VERSION` | `1.120.0` | Default UI5 version for API lookups |
 | `UI5_MCP_SERVER_RESPONSE_NO_RESOURCES` | `true` | Disable resources for client compatibility |
 | `UI5_MCP_SERVER_ALLOWED_ODATA_DOMAINS` | `localhost, services.odata.org` | Comma-separated list of allowed OData domains |
