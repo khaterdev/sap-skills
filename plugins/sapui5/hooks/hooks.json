@@ -11,16 +11,6 @@
             "timeout": 30
           }
         ]
-      },
-      {
-        "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "prompt",
-            "prompt": "If deploying UI5 application, verify:\n\n1. **Build First**: Run ui5 build before deploy\n2. **Component Preload**: Enabled in ui5.yaml\n3. **Production Mode**: Source maps disabled, minification enabled\n4. **Cache Buster**: Enabled for production\n\nWarn user if production deployment without proper build configuration.",
-            "timeout": 15
-          }
-        ]
       }
     ],
     "PostToolUse": [
