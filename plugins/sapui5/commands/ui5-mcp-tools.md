@@ -270,7 +270,6 @@ The sapui5 plugin automatically configures MCP via `.mcp.json`:
     "command": "npx",
     "args": ["-y", "@ui5/mcp-server"],
     "env": {
-      "UI5_PROJECT_DIR": "${cwd}",
       "UI5_VERSION": "1.120.0",
       "UI5_MCP_SERVER_RESPONSE_NO_RESOURCES": "true"
     }

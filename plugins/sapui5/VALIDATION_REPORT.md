@@ -99,7 +99,6 @@ plugins/sapui5/
     "command": "npx",
     "args": ["-y", "@ui5/mcp-server"],
     "env": {
-      "UI5_PROJECT_DIR": "${cwd}",
       "UI5_VERSION": "1.120.0",
       "UI5_MCP_SERVER_RESPONSE_NO_RESOURCES": "true"
     }
@@ -112,13 +111,13 @@ plugins/sapui5/
 - ✅ Command: npx (automatic version resolution)
 - ✅ Args: Correct package name @ui5/mcp-server
 - ✅ Environment variables properly configured:
-  - `UI5_PROJECT_DIR`: Uses `${cwd}` for current working directory
   - `UI5_VERSION`: Pinned to 1.120.0 (stable version)
   - `UI5_MCP_SERVER_RESPONSE_NO_RESOURCES`: true (compatibility setting)
+  - Note: UI5_PROJECT_DIR is optional (server uses current working directory by default)
 
 **Compliance**: ✅ **100% Compliant**
 - Follows MCP server configuration best practices
-- Uses portable environment variables (${cwd})
+- Uses only literal values (no variable substitution needed)
 - No hardcoded paths
 
 ---
@@ -320,7 +319,7 @@ plugins/sapui5/
 ### ✅ No Hardcoded Paths Found
 
 **Analysis**:
-- ✅ `.mcp.json`: Uses `${cwd}` for UI5_PROJECT_DIR (portable)
+- ✅ `.mcp.json`: Uses only literal values (server defaults to current working directory)
 - ✅ `hooks.json`: Uses "prompt" type (no path references needed)
 - ✅ Agents: Reference files relatively (e.g., "sapui5.local.md")
 - ✅ Commands: No hardcoded paths
